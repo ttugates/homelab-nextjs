@@ -24,7 +24,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange>
 
-          <header className="bg-blue-600 p-4 text-white text-center flex justify-between">
+          <header className="bg-blue-950 p-4 text-white text-center flex justify-between">
             <h1 className="text-xl font-bold">My Mobile-Friendly Layout</h1>
             <ModeToggle/>
           </header>
@@ -33,7 +33,7 @@ export default function RootLayout({
             {children}
           </main>
 
-          <footer className="bg-blue-600 p-4 text-white text-center">
+          <footer className="p-4 text-white text-center">
             <p>© 2024 Mikes Home Lab Nextjs</p>
           </footer>
           
