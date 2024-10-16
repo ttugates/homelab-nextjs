@@ -1,13 +1,23 @@
 import type { Metadata } from "next";
 import "../config/globals.css";
-import { ModeToggle } from "@/components/theme-selector";
 import { ThemeProvider } from "@/components/theme-provider";
+import { AppFooter } from "@/components/app-footer";
+import { AppHeader } from "@/components/app-header";
+import { Space_Mono  } from 'next/font/google'
 
 export const metadata: Metadata = {
-  title: "Michael Stramel learning NextJS",
+  title: "Michael Stramel's NextJS Project",
   description: "This site is the prodcut of learning React and related current"
   + "libraries including NextJS, shadcn/ui, Tailwind, etc.",
 };
+
+const roboto = Space_Mono({
+  weight: ['400', '700'],
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+  display: 'swap',
+})
+ 
 
 export default function RootLayout({
   children,
@@ -16,26 +26,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="min-h-screen flex flex-col">
+      
+      <body className={roboto.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange>
 
-          <header className="bg-blue-950 p-4 text-white text-center flex justify-between">
-            <h1 className="text-xl font-bold">My Mobile-Friendly Layout</h1>
-            <ModeToggle/>
-          </header>
+          <AppHeader />
          
           <main className="flex-grow container mx-auto p-4">
             {children}
           </main>
 
-          <footer className="p-4 text-white text-center">
-            <p>© 2024 Mikes Home Lab Nextjs</p>
-          </footer>
-          
+          <AppFooter />
         </ThemeProvider>
       </body>
     </html>
