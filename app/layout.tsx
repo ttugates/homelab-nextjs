@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "../config/globals.css";
+import { ModeToggle } from "@/components/theme-selector";
 import { ThemeProvider } from "@/components/theme-provider";
-import { ModeToggle } from "@/components/reusable/theme-selector";
-
 
 export const metadata: Metadata = {
   title: "Michael Stramel learning NextJS",

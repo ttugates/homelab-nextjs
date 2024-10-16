@@ -11,10 +11,17 @@
     "prefix": ""
   },
   "aliases": {
+    "app": "@/app",
+    "assets": "@/assets",
     "components": "@/components",
-    "utils": "@/lib/utils",
-    "ui": "@/components/ui",
+    "config": "@/config",
+    "features": "@/features",
+    "hooks": "@/hooks",
     "lib": "@/lib",
-    "hooks": "@/hooks"
+    "stores": "@/stores",
+    "test": "@/test",
+    "types": "@/types",
+    "ui": "@/components/ui",
+    "utils": "@/lib/utils"
   }
 }

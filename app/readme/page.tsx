@@ -4,7 +4,9 @@ import ReactMarkdown from 'react-markdown';
  
 const page = async () => {
 
-  const res = await fetch('https://raw.githubusercontent.com/ttugates/homelab-nextjs/refs/heads/main/README.md')
+  const res = await fetch('https://raw.githubusercontent.com/ttugates/homelab-nextjs/refs/heads/main/README.md'
+    , {cache: 'no-store'} 
+  )
   const markdown = await res.text();  
 
   return (
