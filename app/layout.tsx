@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       
-      <body className={roboto.className}>
+      <body className={roboto.className + ' min-h-screen flex flex-col'}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
