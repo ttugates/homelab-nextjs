@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "../config/globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { AppFooter } from "@/components/app-footer";
-import { AppHeader } from "@/components/app-header";
+import { AppHeader } from "@/components/nav-bar/app-header";
 import { Space_Mono  } from 'next/font/google'
 
 export const metadata: Metadata = {

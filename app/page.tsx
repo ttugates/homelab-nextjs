@@ -1,10 +1,8 @@
-import Link from "next/link";
 
 export default function Home() {
   return (
     <main>
-      <h1>Hello!</h1>
-      <Link href="/readme">Read Me</Link>
+        <h1 className="font-bold text-center">Michael Stramel&apos;s React w NextJS App</h1>
     </main>
   );
 }
